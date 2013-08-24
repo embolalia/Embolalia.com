@@ -2,9 +2,9 @@
 # -*- coding: utf-8 -*- #
 
 AUTHOR = u'Edward Powell'
-SITENAME = u'Embolalia.net'
-SITEURL = 'http://embolalia.net'
-FEED_DOMAIN = 'http://embolalia.net'
+SITENAME = u'Embolalia.com'
+SITEURL = 'http://embolalia.com'
+FEED_DOMAIN = 'http://embolalia.com'
 
 TIMEZONE = 'Europe/Paris'
 

@@ -11,7 +11,7 @@ FTP_HOST=localhost
 FTP_USER=anonymous
 FTP_TARGET_DIR=/
 
-SSH_HOST=embolalia.net
+SSH_HOST=embolalia.com
 SSH_PORT=22
 SSH_USER=embo
 SSH_TARGET_DIR=/var/www/html
