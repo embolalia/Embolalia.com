@@ -1,0 +1,4 @@
+[submodule "resume"]
+	path = resume
+	url = git@github.com:embolalia/resume.git
+	branch = master

@@ -40,6 +40,7 @@ html: clean $(OUTPUTDIR)/index.html
 	@echo 'Done'
 
 $(OUTPUTDIR)/%.html:
+	echo 'Title: Resume' | cat - $(INPUTDIR)/../resume/resume.md > $(INPUTDIR)/pages/resume.md
 	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONFFILE) $(PELICANOPTS)
 
 clean:
