@@ -3,8 +3,8 @@
 
 AUTHOR = u'Edward Powell'
 SITENAME = u'Embolalia.com'
-SITEURL = 'http://embolalia.com'
-FEED_DOMAIN = 'http://embolalia.com'
+SITEURL = 'https://embolalia.com'
+FEED_DOMAIN = 'https://embolalia.com'
 
 TIMEZONE = 'Europe/Paris'
 
