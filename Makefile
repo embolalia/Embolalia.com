@@ -35,12 +35,18 @@ help:
 	@echo '   github                           upload the web site via gh-pages   '
 	@echo '                                                                       '
 
+resume_pdf:
+	cd $(INPUTDIR)/../resume
+	make pdf
+	mkdir -p static
+	cp resume.pdf $(INPUTDIR)/../static
+	cd -
 
 html: clean $(OUTPUTDIR)/index.html
 	@echo 'Done'
 
 $(OUTPUTDIR)/%.html:
-	echo 'Title: Resume' | cat - $(INPUTDIR)/../resume/resume.md > $(INPUTDIR)/pages/resume.md
+	/bin/echo -e 'Title: Resume\n\n[(PDF)](../static/resume.pdf)\n' | cat - $(INPUTDIR)/../resume/resume.md > $(INPUTDIR)/pages/resume.md
 	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONFFILE) $(PELICANOPTS)
 
 clean:
@@ -55,7 +61,7 @@ serve:
 devserver:
 	$(BASEDIR)/develop_server.sh restart
 
-publish:
+publish: resume_pdf
 	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(PUBLISHCONF) $(PELICANOPTS)
 
 ssh_upload: publish
