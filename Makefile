@@ -35,18 +35,18 @@ help:
 	@echo '   github                           upload the web site via gh-pages   '
 	@echo '                                                                       '
 
-resume_pdf:
-	cd $(INPUTDIR)/../resume
-	make pdf
-	mkdir -p static
-	cp resume.pdf $(INPUTDIR)/../static
-	cd -
+update_resume:
+	git submodule update
 
-html: clean $(OUTPUTDIR)/index.html
+resume_pdf: update_resume
+	cd $(BASEDIR)/resume; make pdf
+	cp $(BASEDIR)/resume/resume.pdf $(OUTPUTDIR)
+
+html: update_resume clean $(OUTPUTDIR)/index.html
 	@echo 'Done'
 
 $(OUTPUTDIR)/%.html:
-	/bin/echo -e 'Title: Resume\n\n[(PDF)](../static/resume.pdf)\n' | cat - $(INPUTDIR)/../resume/resume.md > $(INPUTDIR)/pages/resume.md
+	/bin/echo -e 'Title: Resume\n\n[(PDF)](../resume.pdf)\n' | cat - $(INPUTDIR)/../resume/resume.md > $(INPUTDIR)/pages/resume.md
 	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONFFILE) $(PELICANOPTS)
 
 clean:
@@ -61,8 +61,10 @@ serve:
 devserver:
 	$(BASEDIR)/develop_server.sh restart
 
-publish: resume_pdf
+publish_build:
 	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(PUBLISHCONF) $(PELICANOPTS)
+
+publish: publish_build resume_pdf
 
 ssh_upload: publish
 	scp -P $(SSH_PORT) -r $(OUTPUTDIR)/* $(SSH_USER)@$(SSH_HOST):$(SSH_TARGET_DIR)
