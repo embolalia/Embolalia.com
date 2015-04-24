@@ -1,12 +1,12 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*- #
 
-AUTHOR = u'Edward Powell'
+AUTHOR = u'Embolalia'
 SITENAME = u'Embolalia.com'
 SITEURL = 'https://embolalia.com'
 FEED_DOMAIN = 'https://embolalia.com'
 
-TIMEZONE = 'Europe/Paris'
+TIMEZONE = 'America/New_York'
 
 DEFAULT_LANG = u'en'
 
@@ -20,9 +20,9 @@ SOCIAL = (('GitHub', 'https://github.com/embolalia'),)
 DEFAULT_PAGINATION = 10
 
 EXTRA_PATH_METADATA = {
-    '*/resume.md': {
-        'Title': 'Resume',
-    },
+#    '*/resume.md': {
+#        'Title': 'Resume',
+#    },
 }
 
 #TEMPLATE_PAGES = {
