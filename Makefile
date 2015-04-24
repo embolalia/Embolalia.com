@@ -40,13 +40,13 @@ update_resume:
 
 resume_pdf: update_resume
 	cd $(BASEDIR)/resume; make pdf
-	cp $(BASEDIR)/resume/resume.pdf $(OUTPUTDIR)
+	#cp $(BASEDIR)/resume/resume.pdf $(OUTPUTDIR)
 
 html: update_resume clean $(OUTPUTDIR)/index.html
 	@echo 'Done'
 
 $(OUTPUTDIR)/%.html:
-	/bin/echo -e 'Title: Resume\n\n[(PDF)](../resume.pdf)\n' | cat - $(INPUTDIR)/../resume/resume.md > $(INPUTDIR)/pages/resume.md
+	#/bin/echo -e 'Title: Resume\n\n[(PDF)](../resume.pdf)\n' | cat - $(INPUTDIR)/../resume/resume.md > $(INPUTDIR)/pages/resume.md
 	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONFFILE) $(PELICANOPTS)
 
 clean:
