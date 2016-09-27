@@ -29,9 +29,9 @@ use, they've all kinda fizzled (I'd say partly because there are
 [too many](https://xkcd.com/927/)). This leaves us with no choice but to accept
 the inevitable rise of the singular "they".
 
-This, alone, I would consider reason enough to just give up on trying to convey
-number in our grammar. Clearly, to do so for people is just not a thing we'll
-be able to manage. But it barely scratches the surface.
+This, alone, I would consider sufficient evidence that communicating number in
+English is absurdly complex. Clearly, to do so for people is just not a thing
+we'll even be able to manage at all. But this barely scratches the surface.
 
 Look at "everything". Despite meaning multiple things, it's singular because
 you're referring to each individual thing by itself. Sure, you get used to
@@ -52,8 +52,14 @@ or "indices", "emojis" or "emoji", "paninis" or "panini"; it depends only on
 how much smarter you want to sound than the person you're talking to. And you
 can go right ahead and say campuses, but don't you dare say alumnuses.
 
-Besides, we're already fine with just calling pants, scissors, and glasses by
-the plural all the time, and deer, fish, and aircraft by the singular, so would
-we really even be missing anything? Sure we might sound like
-[that one character from Futurama](https://www.youtube.com/watch?v=44d8rqeirl0),
-but we'll save ourselves a lot of hassle.
+Clearly, grammatical number in English is a convoluted disaster of inconsistent
+and meaningless rules. A thorough understanding of them must surely come only
+from steeping in their senselessness long enough for them to gain an illusion
+of logic. I would humbly propose that we simply do away with number entirely.
+If everything are plural, nothing are confusing at all. With these one simple
+change, the English languages will make much more senses. Besides, we're
+already fine with just calling pants, scissors, and glasses by the plurals all
+the time, and deer, fish, and aircraft by the singulars, so would we really
+even be missing anything? Sure we might sound like
+[those ones characters from Futuramas](https://www.youtube.com/watch?v=44d8rqeirl0),
+but we'll save ourselves some lots of hassles.
