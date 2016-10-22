@@ -1,5 +1,5 @@
-Title: Just kill the English plural already
-Date: 2016-6-25 15:39:00
+Title: What are up with the English plurals?
+Date: 2016-10-21 13:00:00
 
 Grammatical number in English is horrible, and we should just give up on it.
 Granted, this is something we can say about basically every aspect of the
@@ -36,7 +36,7 @@ we'll even be able to manage at all. But this barely scratches the surface.
 Look at "everything". Despite meaning multiple things, it's singular because
 you're referring to each individual thing by itself. Sure, you get used to
 that, but if you think it's intuitive you're kidding yourself. And British
-English will refer to a company as plural ("Apple are corageously removing
+English will refer to a company as plural ("Apple are courageously removing
 the headphone jack") because it's a group of individuals, but in America a company is
 singular ("Apple has outrageously slaughtered the headphone jack"). I guess
 this is because in America, corporations are people, my friend.
