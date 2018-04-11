@@ -59,3 +59,9 @@ talking to or how I'm feeling, I also use a variety of terms to identify
 myself. Those terms are equally my name, and are equally real. They are my real
 names.
 
+---
+
+UPDATE: I'm now going by Else (as in `if`), though my legal name is still
+Elsie. I could write an entire additional article (or I guess rewrite this one)
+about why I made this change, but basically it feels a little less gendery
+(which is nice, since I'm non-binary), and allows lots of room for puns.

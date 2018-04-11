@@ -48,6 +48,15 @@ accidental. Liechtenstein and Haiti used to have *exactly* the same
 [flag](/assets/Flag_of_Liechtenstein_and_Haiti.svg), and France, the Netherlands,
 Luxembourg, and Russia all have red, white, and blue tricolours, though, so
 it's not the world's worst case of accidentally similar flags. But, given that
-people still assume [Willie](http://willie.dftba.net) was named as a
+people still assume [Willie](https://sopel.chat) was named as a
 double-entendre, which I really promise it wasn't, I really ought to be more
 careful about these things…
+
+
+UPDATE: I've since updated the [flag](assets/new_flag.svg) to have an unfilled
+pentagram rather than a filled five-point star. This clears up the similarity
+to the Somali flag, and also matches the pentagram tattoo I got on my wrist in
+early 2018. (I may post at some point about why I chose that symbol.) Also, I
+changed the name of the IRC bot to [Sopel](https://sopel.chat) specifically
+because the constant jokes were annoying. I've since then stopped working on it
+altogether though.
