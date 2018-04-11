@@ -42,12 +42,12 @@ resume_pdf: update_resume
 	cd $(BASEDIR)/resume; make pdf
 	cp $(BASEDIR)/resume/resume.pdf $(OUTPUTDIR)
 
-html: update_resume clean $(OUTPUTDIR)/index.html
+html: clean $(OUTPUTDIR)/index.html resume_pdf
 	@echo 'Done'
 
 $(OUTPUTDIR)/%.html:
 	/bin/echo -e 'Title: Resume\n\n[(PDF)](../resume.pdf)\n' | cat - $(INPUTDIR)/../resume/resume.md > $(INPUTDIR)/pages/resume.md
-	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONFFILE) $(PELICANOPTS)
+	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(PUBLISHCONF) $(PELICANOPTS)
 
 clean:
 	find $(OUTPUTDIR) -mindepth 1 -delete
@@ -64,7 +64,7 @@ devserver:
 publish_build:
 	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(PUBLISHCONF) $(PELICANOPTS)
 
-publish: publish_build
+publish: html
 
 ssh_upload: publish
 	scp -P $(SSH_PORT) -r $(OUTPUTDIR)/* assets $(SSH_USER)@$(SSH_HOST):$(SSH_TARGET_DIR)
