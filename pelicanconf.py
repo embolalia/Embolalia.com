@@ -11,11 +11,14 @@ TIMEZONE = 'America/New_York'
 DEFAULT_LANG = u'en'
 
 # Blogroll
-LINKS =  (('Nerdfighteria Network', 'http://dftba.net'),
-          ('Willie IRC Bot', 'http://willie.dftba.net'),)
+LINKS =  ()
 
 # Social widget
-SOCIAL = (('GitHub', 'https://github.com/embolalia'),)
+SOCIAL = (
+    ('GitHub', 'https://github.com/embolalia'),
+    ('Twitter', 'https://twitter.com/lcdpowell'),
+    ('Mastodon', 'https://mastodon.social/@embolalia'),
+)
 
 DEFAULT_PAGINATION = 10
 
